@@ -3,13 +3,20 @@ body {
     padding: 0;
     height: 100vh;
     width: 100vw;
-    
-    background: #cbd6ef;
-    background-image: url('./images/pastelli.png');
-    background-repeat: no-repeat;
-    background-position: bottom;
-    background-size: contain;
-    
-    
 }
 
+main {
+
+    height: 80vh;
+    background-color: #cbd6ef;
+}
+
+header {
+    height: 20vh;
+    background-image: url('./images/pastelli.png');    
+    background-repeat: no-repeat;
+    background-size: 100vw 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

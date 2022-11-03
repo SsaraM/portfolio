@@ -17,12 +17,16 @@ const root = ReactDOM.createRoot(
 root.render(
   <React.StrictMode>
     <BrowserRouter>
-      <Routes>
-        <Route path='/' element={<App />} />
-        {/* <Route path='/example' element={<SomeExampleComponent />} />
+      <main>
+        <Routes>
+          <Route path='/' element={<App />} />
+          {/* <Route path='/example' element={<SomeExampleComponent />} />
         <Route path='/first' element={<MyFirstComponent />} /> */}
-      </Routes>
-      <Navbar />
+        </Routes>
+      </main>
+      <header>
+        <Navbar />
+      </header>
     </BrowserRouter>
   </React.StrictMode>
 )
