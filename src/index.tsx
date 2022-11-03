@@ -7,8 +7,6 @@ import {
   Route,
 } from "react-router-dom";
 // import styles from './index.module.scss'
-import SomeExampleComponent from './components/example/someExampleComponent';
-import MyFirstComponent from './components/myFirstComponent';
 import Navbar from './components/navbar/navbar';
 import "./index.module.scss"
 
