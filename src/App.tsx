@@ -1,16 +1,12 @@
 // App.tsx
 import React from 'react'
-import MyFirstComponent from './components/myFirstComponent';
-import SomeExampleComponent from './components/example/someExampleComponent';
-import ClickCount from './components/clickCount';
+import Etusivu from './components/portfolioSara/etusivu';
+import styles from './app.module.scss'
 
 const App: React.FC = () => {
   return (
-    <div>
-      asd
-      <MyFirstComponent />
-      <SomeExampleComponent />
-      <ClickCount />
+    <div className= {styles.container}>
+      <Etusivu />
     </div>
   )
 }
