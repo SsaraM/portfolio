@@ -1,0 +1,29 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 150px;
+}
+
+.container .left {
+    height: 80vh;
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.container .right {
+    height: 80vh;
+    width: 50vw;
+}
+.container h1 {
+    color: white;
+    font-size: 60px;
+    text-align: center;
+}
+
+.container h2 {
+    color: white;
+    font-size: 20px;
+    text-align: center;
+}

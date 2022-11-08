@@ -1,6 +1,29 @@
+@mixin linkBaseStyle {
+    text-decoration: none;
+}
+
 .container {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 40px;
+    gap: 40px;
+    font-size: 55px;
+    
 }
+
+.container a {
+ color: white;
+ @include linkBaseStyle();
+
+
+}
+
+// .container a svg {
+    
+//     color: white;
+//  }
+
+// .container .link2 {
+//     @include linkBaseStyle();
+//     color: white;
+// }
