@@ -6,17 +6,26 @@ body {
 }
 
 main {
-
-    height: 80vh;
+    width: 100vw;
+    height: 90vh;
     background-color: #b8b4d7;
+
+    @media (min-width: 695px) {
+
+        height: 85vh;
+    }
 }
 
 header {
-    height: 20vh;
-    background-image: url('./images/pastelli.png');    
+    height: 10vh;
+    background-image: url('./images/pastelli.png');
     background-repeat: no-repeat;
     background-size: 100vw 20vh;
     display: flex;
     align-items: center;
     justify-content: center;
+
+    @media (min-width: 695px) {
+        height: 15vh;
+    }
 }
