@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "./static/css/main.e637cf04.css",
-    "main.js": "./static/js/main.cef75d0e.js",
+    "main.css": "./static/css/main.71c69f99.css",
+    "main.js": "./static/js/main.df70052c.js",
     "static/media/pastelli.png": "./static/media/pastelli.cb8dc1822ef778de3892.png",
     "index.html": "./index.html",
-    "main.e637cf04.css.map": "./static/css/main.e637cf04.css.map",
-    "main.cef75d0e.js.map": "./static/js/main.cef75d0e.js.map"
+    "main.71c69f99.css.map": "./static/css/main.71c69f99.css.map",
+    "main.df70052c.js.map": "./static/js/main.df70052c.js.map"
   },
   "entrypoints": [
-    "static/css/main.e637cf04.css",
-    "static/js/main.cef75d0e.js"
+    "static/css/main.71c69f99.css",
+    "static/js/main.df70052c.js"
   ]
 }
