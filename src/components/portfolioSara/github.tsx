@@ -20,7 +20,7 @@ const MyGithubRepos: React.FC = () => {
             <div className={styles.border}>
           <div key={x.id} className={styles.item}>
             <p>{x.name}</p>
-            <p>{x.description}</p>
+            <p>{x.git_url}</p>
             
           </div>
             </div>
