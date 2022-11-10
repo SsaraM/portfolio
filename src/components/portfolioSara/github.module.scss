@@ -1,0 +1,27 @@
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    padding-block: 50px;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.container .border {
+    background: radial-gradient(circle, rgba(231,203,189,1) 20%, rgba(194,163,197,1) 53%, rgba(84,139,206,1) 100%);
+}
+
+.container .item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-style: normal;
+    font-size: 20px;
+    text-shadow: 2px 2px rgb(219, 169, 144);
+    height: 120px;
+    width: 200px;
+    background: rgb(231, 203, 189);
+    padding: 10px;
+    margin: 10px;
+}

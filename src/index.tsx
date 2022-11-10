@@ -11,6 +11,7 @@ import Navbar from './components/navbar/navbar';
 import "./index.module.scss"
 import Cvsivu from './components/portfolioSara/cvsivu';
 import Projektisivu from './components/portfolioSara/projektisivu';
+import MyGithubRepos from './components/portfolioSara/github';
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
@@ -23,7 +24,7 @@ root.render(
         <Routes>
           <Route path='/' element={<App />} />
           <Route path='/first' element={<Cvsivu />} />
-          <Route path='/example' element={<Projektisivu />} />
+          <Route path='/example' element={<MyGithubRepos />} />
         </Routes>
       </main>
       <header>
