@@ -20,12 +20,22 @@ const MyGithubRepos: React.FC = () => {
             <div className={styles.border}>
           <div key={x.id} className={styles.item}>
             <p>{x.name}</p>
-            <p>{x.git_url}</p>
-            
+            <p>{x.description}</p>
+            <a href={x.html_url} target="_blank">siirry</a>
           </div>
             </div>
         ))
       }
+      <div className={styles.info}>
+        <div className={styles.background}>
+        <h1>
+          Osaaminen
+        </h1>
+        <p>
+          Tähän jotain järkevää tekstiä osaamisesta.
+        </p>
+        </div>
+      </div>
     </div>
   )
 }

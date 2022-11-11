@@ -1,17 +1,20 @@
 .container {
     display: flex;
-    justify-content: center;
-    gap: 60px;
+    justify-content: flex-start;
     padding-block: 50px;
     flex-direction: row;
     flex-wrap: wrap;
+    gap: 50px;
+    margin-left: 50px;
+    width: 700px;
 }
+
 
 .container .border {
     background: radial-gradient(circle, rgba(231,203,189,1) 20%, rgba(194,163,197,1) 53%, rgba(84,139,206,1) 100%);
 }
 
-.container .item {
+.container .border .item {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -24,4 +27,42 @@
     background: rgb(231, 203, 189);
     padding: 10px;
     margin: 10px;
+}
+
+.container .info {
+    
+    
+    background: radial-gradient(circle, rgba(231,203,189,1) 20%, rgba(194,163,197,1) 53%, rgba(84,139,206,1) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    
+}
+
+.container .background {
+
+    background-color: rgb(231, 203, 189);
+    width: 470px;
+    height: 470px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container h1 {
+    font-style: normal;
+    font-size: 40px;
+    text-shadow: 2px 2px rgb(213, 151, 119);
+}
+
+.container p {
+    font-style: normal;
+    font-size: 20px;
+    text-shadow: 2px 2px rgb(219, 169, 144);
+    margin: 10px 0px;
 }
