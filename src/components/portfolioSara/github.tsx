@@ -15,6 +15,8 @@ const MyGithubRepos: React.FC = () => {
 
   return (
     <div className={styles.container}>
+      
+      {/* <h3>Projektit</h3> */}
       {
         githubData && githubData.map(x => (
             <div className={styles.border}>
@@ -28,12 +30,13 @@ const MyGithubRepos: React.FC = () => {
       }
       <div className={styles.info}>
         <div className={styles.background}>
-        <h1>
-          Osaaminen
-        </h1>
+          <h1>Kokemus</h1>
         <p>
-          Tähän jotain järkevää tekstiä osaamisesta.
+          Olen tehnyt pelejä C# kielellä Unity alustalla. Reactilla olen käyttänyt HTML, CSS ja JavaScript.
         </p>
+        <h2>
+          C# HTML CSS JavaScript
+        </h2>
         </div>
       </div>
     </div>

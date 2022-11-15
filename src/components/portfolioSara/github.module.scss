@@ -9,9 +9,8 @@
     width: 700px;
 }
 
-
 .container .border {
-    background: radial-gradient(circle, rgba(231,203,189,1) 20%, rgba(194,163,197,1) 53%, rgba(84,139,206,1) 100%);
+    background-color: black;
 }
 
 .container .border .item {
@@ -32,14 +31,14 @@
 .container .info {
     
     
-    background: radial-gradient(circle, rgba(231,203,189,1) 20%, rgba(194,163,197,1) 53%, rgba(84,139,206,1) 100%);
+    background: black;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 500px;
     height: 500px;
     position: absolute;
-    top: 50px;
+    top: 100px;
     right: 50px;
     
 }
@@ -54,15 +53,34 @@
     flex-direction: column;
 }
 
-.container h1 {
+.container .h1 {
     font-style: normal;
-    font-size: 40px;
-    text-shadow: 2px 2px rgb(213, 151, 119);
+    font-size: 30px;
+    text-shadow: 2px 2px rgb(211, 154, 126);
 }
 
 .container p {
     font-style: normal;
+    text-align: center;
+    width: 330px;
     font-size: 20px;
-    text-shadow: 2px 2px rgb(219, 169, 144);
     margin: 10px 0px;
+    line-height: 1.7;
 }
+
+.container h2 {
+    font-style: normal;
+    font-size: 30px;
+    position: relative;
+    top: 200px;
+    word-spacing: 25px;
+}
+
+// .container h3 {
+//     font-size: 30px;
+//     width: 200px;
+//     height: 50px;
+//     position: relative;
+//     left: 200px;
+//     border: 7px dotted black;
+// }

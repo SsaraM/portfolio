@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App';
 import {
-  BrowserRouter,
+  HashRouter,
   Routes,
   Route,
 } from "react-router-dom";
@@ -18,7 +18,10 @@ const root = ReactDOM.createRoot(
 
 root.render(
   <React.StrictMode>
-    <BrowserRouter>
+    <HashRouter>
+      <header>
+        <Navbar />
+      </header>
       <main>
         <Routes>
           <Route path='/' element={<App />} />
@@ -26,10 +29,7 @@ root.render(
           <Route path='/example' element={<MyGithubRepos />} />
         </Routes>
       </main>
-      <header>
-        <Navbar />
-      </header>
-    </BrowserRouter>
+    </HashRouter>
   </React.StrictMode>
 )
 

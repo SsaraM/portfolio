@@ -6,14 +6,16 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 60px;
+    gap: 40px;
     font-size: 20px;
+    position: fixed;
+    left: 10px;
     @media (min-width: 695px) {
-        font-size: 35px;
+        font-size: 25px;
     }
 
     @media (min-width: 1250px) {
-        font-size: 40px;
+        font-size: 30px;
     }
 }
 
