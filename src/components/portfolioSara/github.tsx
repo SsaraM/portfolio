@@ -21,7 +21,7 @@ const MyGithubRepos: React.FC = () => {
           <div key={x.id} className={styles.item}>
             <p>{x.name}</p>
             <p>{x.description}</p>
-            <a href={x.html_url} target="_blank">siirry</a>
+            <a href={x.html_url} target="_blank" rel="noreferrer">siirry</a>
           </div>
             </div>
         ))

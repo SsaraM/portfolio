@@ -12,7 +12,7 @@ const Navbar: React.FC<NavbarProps> = () => {
     <div className={styles.container}>
       <Link to="/"><AiFillHome/></Link> 
       <Link to="/first">CV</Link>
-      <a href="https://github.com/SsaraM?tab=repositories" target="_blank"><AiFillGithub/></a>
+      <a href="https://github.com/SsaraM?tab=repositories" target="_blank" rel="noreferrer"><AiFillGithub/></a>
       <Link to="example">Projektit</Link>
     </div>
   )
