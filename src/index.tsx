@@ -10,7 +10,7 @@ import {
 import Navbar from './components/navbar/navbar';
 import "./index.module.scss"
 import Cvsivu from './components/portfolioSara/cvsivu';
-import MyGithubRepos from './components/portfolioSara/github';
+import MyGithubRepos from './components/portfolioSara/github/github';
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
@@ -19,16 +19,17 @@ const root = ReactDOM.createRoot(
 root.render(
   <React.StrictMode>
     <HashRouter>
-      <header>
+      <Navbar />
+      {/* <header>
         <Navbar />
-      </header>
-      <main>
+      </header> */}
+      {/* <main> */}
         <Routes>
           <Route path='/' element={<App />} />
-          <Route path='/first' element={<Cvsivu />} />
-          <Route path='/example' element={<MyGithubRepos />} />
+          <Route path='/Cv' element={<Cvsivu />} />
+          <Route path='/Osaaminen' element={<MyGithubRepos />} />
         </Routes>
-      </main>
+      {/* </main> */}
     </HashRouter>
   </React.StrictMode>
 )

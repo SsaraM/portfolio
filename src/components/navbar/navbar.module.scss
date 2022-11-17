@@ -1,23 +1,30 @@
+@import "../../environment.module.scss";
+
 @mixin linkBaseStyle {
     text-decoration: none;
 }
 
 .container {
+    background-color: black;
+    height: #{$navbar-height};
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
-    gap: 40px;
+    gap: 50px;
+    padding-left: 50px;
     font-size: 20px;
-    position: fixed;
-    left: 10px;
-    @media (min-width: 695px) {
-        font-size: 25px;
-    }
-
-    @media (min-width: 1250px) {
-        font-size: 30px;
-    }
+    // position: fixed;
+    // left: 10px;
+    // transition: opacity 0.5s;
+    // @media (min-width: 695px) {
+    //     font-size: 25px;
+    // }
+    
+    // @media (min-width: 1250px) {
+    //     font-size: 30px;
+    // }
 }
+
 
 .container a {
  color: white;
@@ -26,12 +33,3 @@
 
 }
 
-// .container a svg {
-    
-//     color: white;
-//  }
-
-// .container .link2 {
-//     @include linkBaseStyle();
-//     color: white;
-// }

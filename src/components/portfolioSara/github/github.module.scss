@@ -1,0 +1,177 @@
+@import "../../../environment.module.scss";
+
+.container {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+    // .l {
+    //     display: flex;
+    //     // justify-content: center;
+    //     // flex-direction: column;
+    //     // flex-wrap: wrap;
+    //     // // // width: 50vw;
+    //     // margin-top: 100px;
+    //     // gap: 50px;
+        
+        
+    //     h1 {
+    //         font-size: 30px;
+    //         margin-top: 136px;
+    //         margin-right: 210px;
+    //         margin-left: 210px;
+    //         height:fit-content;
+    //     }
+    //     .item {
+    //         display: flex;
+    //         align-items: center;
+    //         justify-content: center;
+    //         flex-direction: column;
+    //         height: 97px;
+    //         width: 164px;
+    //         line-height: 0.6;
+    //         background: rgb(231, 203, 189);
+    //         border-style: solid;
+    //         border-width: 10px;
+    //         padding: 10px;
+    //     }
+    //     // a {
+    //     //     line-height: 0.6;
+    //     // }
+    // }
+    // .r { 
+    //     display: flex;
+    //     justify-content: center;
+    //     width: 50vw;
+    //     margin-top: 100px;
+
+    //     // .background {
+        
+    //     //     background-color: rgb(231, 203, 189);
+    //     //     border-style: solid;
+    //     //     border-width: 10px;
+    //     //     width: 410px;
+    //     //     height: 410px;
+    //     //     display: flex;
+    //     //     align-items: center;
+    //     //     flex-direction: column;
+    //     //     @media (min-width: 695px){
+    //     //         width: 440;
+    //     //         height: 440;
+    //     //     }
+    //     //     @media (min-width: 1250px){
+    //     //         width: 470;
+    //     //         height: 470;
+    //     //     }
+    //     //     p {
+    //     //         font-style: normal;
+    //     //         text-align: center;
+    //     //         width: 330px;
+    //     //         font-size: 20px;
+    //     //         margin: 10px 0px;
+    //     //         line-height: 1.7;
+    //     //     }
+    //     //     h2 {
+    //     //         font-style: normal;
+    //     //         font-size: 30px;
+    //     //         text-shadow: 2px 2px rgb(211, 154, 126);
+    //     //     }
+            
+            
+    //     //     h3 {
+    //     //         font-style: normal;
+    //     //         font-size: 23px;
+    //     //         word-spacing: 18px;
+    //     //         margin-top: 160px;
+    //     //         @media (min-width: 830px){
+    //     //             font-size: 28px;
+    //     //         }
+    //     //         @media (min-width: 925px){
+    //     //             font-size: 30px;
+    //     //         }
+    //     //     }
+    //     // }
+    // }
+}
+
+@mixin containerBase {
+    width: 50vw;
+    // min-width: 380px;
+    height: calc(100vh - #{$navbar-height});
+
+    @media only screen and (min-width: 500px) {
+        width: 50vw;
+    }
+
+    @media only screen and (max-width: 500px) {
+        width: 100vw;
+    }
+}
+
+.container .contentLeft {
+    @include containerBase();
+    // background: orange;
+}
+.container .contentLeft .items {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 57px;
+    justify-content: center;
+}
+
+.container .contentLeft .items .item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 97px;
+    width: 164px;
+    line-height: 0.6;
+    background: rgb(231, 203, 189);
+    border-style: solid;
+    border-width: 10px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.container .contentLeft h1 {
+    font-size: 30px;
+    text-align: center;
+}
+
+.container .contentRight {
+    @include containerBase();
+    // background: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .contentRight .background {
+    background-color: rgb(231, 203, 189);
+    border-style: solid;
+    border-width: 10px;
+    width: 410px;
+    height: 410px;
+    text-align: center;
+    // min-width: 410px;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container .contentRight .background p {
+    width: 300px;
+    font-size: 20px;
+    margin-bottom: 155px;
+}
+.container .contentRight .background h2 {
+    font-size: 30px;
+}
+.container .contentRight .background h3 {
+    font-size: 30px;
+    word-spacing: 18px;
+
+}

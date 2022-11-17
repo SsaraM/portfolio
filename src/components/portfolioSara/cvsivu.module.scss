@@ -16,15 +16,17 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 95px;
 }
 
 .container .right {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 95px;
 }
 .container h1 {
-    color: white;
+    color: black;
     font-size: 40px;
     text-align: center;
     @media (min-width: 695px){
@@ -35,8 +37,8 @@
     // }
 }
 
-.container h2 {
-    color: white;
+.container p {
+    color: black;
     font-size: 20px;
     text-align: center;
     width: 100px;
