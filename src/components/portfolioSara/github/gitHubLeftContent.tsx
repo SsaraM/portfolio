@@ -23,13 +23,11 @@ const GitHubLeftContent: React.FC<GitHubLeftContentProps> = () => {
             <div className={styles.items}>
                 {
                     githubData && githubData.map(x => (
-                        // <div className={styles.back}>
                         <div key={x.id} className={styles.item}>
                             <p>{x.name}</p>
                             <p>{x.description}</p>
                             <a href={x.html_url} target="_blank" rel="noreferrer">siirry</a>
                         </div>
-                        // </div>
                     ))
                 }
             </div>
