@@ -5,33 +5,28 @@ body {
     width: 100vw;
     background: radial-gradient(circle, rgba(231,203,189,1) 20%, rgba(194,163,197,1) 53%, rgba(84,139,206,1) 100%);;
     background-attachment: fixed;
-    // display: flex;
-    // align-items: center;
-    // justify-content: center;
 }
 
-// main {
-//     width: 100vw;
-//     height: 95vh;
-//     // background-color: #b8b4d7;
+.root {
+    height: 100vh;
+}
 
-//     @media (min-width: 695px) {
 
-//         height: 92vh;
-//     }
-// }
+// footer
+.container {
+    position: relative;
+    min-height: 100vh;
+}
 
-// header {
-//     width: 100vw;
-//     height: 5vh;
-//     // background: radial-gradient(circle, rgba(231,203,189,1) 20%, rgba(194,163,197,1) 53%, rgba(84,139,206,1) 100%);;
-//     display: flex;
-//     align-items: center;
-//     justify-content: center;
-//     background-color: black;
+.container .wrap {
+   padding-bottom: 2.5rem; 
+}
 
-//     @media (min-width: 695px) {
-//         height: 8vh;
-
-//     }
-// }
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 3rem;
+    text-align: center;
+    border-top: dotted;
+}

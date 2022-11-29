@@ -3,7 +3,6 @@ import styles from './github.module.scss'
 
 const GitHubRightContent: React.FC = () => {
     return (
-        // <div className={styles.r}>
             <div className={styles.background}>
                 <h2>Kokemus</h2>
                 <p>
@@ -13,7 +12,6 @@ const GitHubRightContent: React.FC = () => {
                     C# HTML CSS JavaScript
                 </h3>
             </div>
-        // {/* </div> */}
     )
 }
 

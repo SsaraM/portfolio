@@ -23,6 +23,9 @@
  color: white;
  @include linkBaseStyle();
 
-
 }
 
+a:hover { 
+    color: rgb(93, 144, 206);
+    font-size: 110%;
+}

@@ -10,9 +10,9 @@ const Etusivu: React.FC<EtusivuProps> = () => {
     <div className={styles.container}>
           <h1>Sara Mustapha</h1>
         <p>Opiskelen toista vuotta ohjelmistokehitystä Varian ammattiopistossa.</p>
-        <div className={styles.item}>
-          sara.mustapha26@gmail.com
-        </div>
+        {/* <div className={styles.item}>
+          <h2>sara.mustapha26@gmail.com</h2>
+        </div> */}
     </div>
   )
 }

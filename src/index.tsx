@@ -2,35 +2,45 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App';
 import {
-  HashRouter,
+  HashRouter as Router,
   Routes,
   Route,
 } from "react-router-dom";
-// import styles from './index.module.scss'
 import Navbar from './components/navbar/navbar';
-import "./index.module.scss"
+import styles from "./index.module.scss"
 import Cvsivu from './components/portfolioSara/cvsivu';
 import MyGithubRepos from './components/portfolioSara/github/github';
+import { ModalContextProvider } from '@rintsin/common-components'
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
 );
 
-root.render(
-  <React.StrictMode>
-    <HashRouter>
-      <Navbar />
-      {/* <header>
-        <Navbar />
-      </header> */}
-      {/* <main> */}
-        <Routes>
-          <Route path='/' element={<App />} />
-          <Route path='/Cv' element={<Cvsivu />} />
-          <Route path='/Osaaminen' element={<MyGithubRepos />} />
-        </Routes>
-      {/* </main> */}
-    </HashRouter>
-  </React.StrictMode>
-)
+const Index: React.FC = () => {
+  return (
+    <React.StrictMode>
+      <ModalContextProvider>
+        <div className={styles.container}>
+          <Router>
+            <div className={styles.wrap}>
+              <Navbar />
+              <Routes>
+                <Route path='/' element={<App />} />
+                <Route path='/Cv' element={<Cvsivu />} />
+                <Route path='/Osaaminen' element={<MyGithubRepos />} />
+              </Routes>
+            </div>
+            <footer>
+              <p>
+              sara.mustapha26@gmail.com
+              </p>
+            </footer>
+          </Router>
+        </div>
+      </ModalContextProvider>
+    </React.StrictMode>
+  )
+}
+
+root.render(<Index />)
 
