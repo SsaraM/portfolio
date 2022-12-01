@@ -15,7 +15,7 @@ const Cvsivu: React.FC<CvsivuProps> = () => {
     content: (
       <div className={styles.items}>
         <img src={cvkuva} alt='CV kuva' height={'100px'} width='100px' />
-        <a href={cvkuva} target='_blank' rel='noreferrer'>LATAA KUVA</a>
+        <a href={cvkuva} target='_blank' rel='noreferrer'>SUURENNA KUVA</a>
       </div>
     )
   })

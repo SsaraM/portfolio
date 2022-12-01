@@ -31,9 +31,7 @@ const Index: React.FC = () => {
               </Routes>
             </div>
             <footer>
-              <p>
-              sara.mustapha26@gmail.com
-              </p>
+            <a href='mai&#108;&#116;o&#58;sara&#46;mus&#116;&#97;%70h%6126%4&#48;gmai&#108;&#46;c&#111;m'>sa&#114;&#97;&#46;mustapha2&#54;&#64;gm&#97;&#105;l&#46;co&#109;</a>
             </footer>
           </Router>
         </div>

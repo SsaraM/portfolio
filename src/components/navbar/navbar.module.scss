@@ -7,12 +7,14 @@
 .container {
     background-color: black;
     height: #{$navbar-height};
+    width: 100vw;
     display: flex;
     justify-content: flex-start;
     align-items: center;
     gap: 50px;
     padding-left: 50px;
     font-size: 20px;
+
     @media (max-width: 415px) {
         gap: 20px;
     }
@@ -20,12 +22,11 @@
 
 
 .container a {
- color: white;
- @include linkBaseStyle();
+    color: white;
+    @include linkBaseStyle();
 
-}
-
-a:hover { 
-    color: rgb(93, 144, 206);
-    font-size: 110%;
+    &:hover {
+        color: rgba(177, 230, 250, 1);
+        font-size: 110%;
+    }
 }

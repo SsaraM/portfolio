@@ -18,7 +18,7 @@ const GitHubLeftContent: React.FC<GitHubLeftContentProps> = () => {
     }, [])
     
     return (
-        <div className={styles.l}>
+        <div>
             <h1>Projektit</h1>
             <div className={styles.items}>
                 {
