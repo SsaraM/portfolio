@@ -29,7 +29,8 @@ const Cvsivu: React.FC<CvsivuProps> = () => {
       </div>
       <div className={styles.right}>
         <h1>Työkokemus</h1>
-        <p>Työharjoittelu koululla tulee tähän</p>
+        <p>Vuokratyö K market 2020</p>
+        <p>SOL Henkilöstöpalvelut Oy 2019</p>
       <span onClick={openModal}>Katso koko cv</span>
       </div>
     </div>
